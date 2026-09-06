@@ -1,7 +1,7 @@
 # 🎰 Roulette Strategy Simulator
 
-**Ein Simulator, der zeigt, warum Wettsysteme den Hausvorteil nicht schlagen — Martingale, Fibonacci & Co. über tausende simulierte Spins nebeneinander.**
-_A simulator that shows why betting systems can't beat the house edge — Martingale, Fibonacci & co. compared over thousands of simulated spins._
+**„Verdopple nach jedem Verlust, dann kannst du nicht verlieren" — stimmt mathematisch nicht. Dieser Simulator lässt Martingale, Fibonacci & Co. über tausende Spins laufen und macht sichtbar, warum kein System den Hausvorteil schlägt.**
+_"Double after every loss and you can't lose" — mathematically false. This simulator runs Martingale, Fibonacci & co. over thousands of spins and makes it visible why no system beats the house edge._
 
 ![Screenshot](docs/screenshot.png)
 
@@ -9,11 +9,11 @@ _A simulator that shows why betting systems can't beat the house edge — Martin
 
 ## 🇩🇪 Deutsch
 
-### Was ist das?
-Ein reiner Mathematik-/Wahrscheinlichkeits-Simulator. Er lässt mehrere bekannte Roulette-Wettsysteme (Martingale, Fibonacci, D'Alembert, Dutzend-Leiter) parallel gegen denselben Zufalls-Spin-Verlauf antreten und zeigt live Budget, Gewinn/Verlust, Trefferquote und Recovery-Status. Zusätzlich erkennt er Muster im Verlauf (Serien, Wechsel, Blöcke).
+### Das Problem
+Wettsysteme klingen verführerisch — „verdopple nach jedem Verlust, dann kannst du nicht verlieren". Das stimmt mathematisch nicht: der Hausvorteil bleibt, und irgendwann trifft die Verlustserie das Budget-Limit. Nur nachrechnen tut das kaum jemand.
 
-### Warum habe ich das gebaut?
-Wettsysteme klingen verführerisch — „verdopple nach jedem Verlust, dann kannst du nicht verlieren". Das stimmt mathematisch nicht: der Hausvorteil bleibt, und irgendwann trifft die Verlustserie das Budget-Limit. Ich wollte das **sichtbar** machen, statt es nur zu behaupten. Über tausende Spins sieht man selbst, wie jedes System langfristig gegen die Wand läuft. Ein kleines Wochenend-/Spaßprojekt über Erwartungswert und Zufall.
+### Die Lösung
+Ein reiner Mathematik-/Wahrscheinlichkeits-Simulator, der das **sichtbar** macht, statt es nur zu behaupten. Er lässt mehrere bekannte Roulette-Wettsysteme (Martingale, Fibonacci, D'Alembert, Dutzend-Leiter) parallel gegen denselben Zufalls-Spin-Verlauf antreten und zeigt live Budget, Gewinn/Verlust, Trefferquote und Recovery-Status; zusätzlich erkennt er Muster im Verlauf (Serien, Wechsel, Blöcke). Über tausende Spins sieht man selbst, wie jedes System langfristig gegen die Wand läuft. Ein kleines Wochenend-/Spaßprojekt über Erwartungswert und Zufall.
 
 ### Wie funktioniert es?
 - **Reiner Simulator:** lokaler Zufallsgenerator (`Math.random`), keine echte Seite, kein echtes Geld, keine Anbindung an irgendein Casino.
@@ -23,11 +23,11 @@ Wettsysteme klingen verführerisch — „verdopple nach jedem Verlust, dann kan
 
 ## 🇬🇧 English
 
-### What is it?
-A pure maths/probability simulator. It runs several well-known roulette betting systems (Martingale, Fibonacci, D'Alembert, dozen-ladder) in parallel against the same random spin history and shows live budget, P&L, hit rate and recovery status. It also detects patterns in the stream (streaks, alternations, blocks).
+### The problem
+Betting systems sound seductive — "double after every loss and you can't lose". Mathematically that's false: the house edge remains and eventually a losing streak hits your budget limit. Few people actually do the math.
 
-### Why I built it
-Betting systems sound seductive — "double after every loss and you can't lose". Mathematically that's false: the house edge remains and eventually a losing streak hits your budget limit. I wanted to make that **visible** rather than just assert it. Over thousands of spins you watch every system fail in the long run. A small weekend project about expected value and randomness.
+### The solution
+A pure maths/probability simulator that makes it **visible** rather than just asserting it. It runs several well-known roulette betting systems (Martingale, Fibonacci, D'Alembert, dozen-ladder) in parallel against the same random spin history and shows live budget, P&L, hit rate and recovery status; it also detects patterns in the stream (streaks, alternations, blocks). Over thousands of spins you watch every system fail in the long run. A small weekend project about expected value and randomness.
 
 ### How it works
 - **Pure simulator:** a local random generator (`Math.random`), no real site, no real money, no connection to any casino.
